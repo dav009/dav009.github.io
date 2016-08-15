@@ -18,8 +18,12 @@ disqus_shortname: 'David'
 url:            'http://blog.alejandro.pictures'
 author:         'David Przybilla'
 authorTwitter:  'dav009'
-
+website: 'http://alejandro.pictures'
+email: 'dav.alejandro@gmail.com'
 permalink:       /:year/:title/
+
+github: dav009
+twitter: dav009
 
 defaults:
     -
