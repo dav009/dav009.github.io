@@ -1,0 +1,42 @@
+name: David Przybilla Blog
+description: Programming and other evils
+meta_description: "David Przybilla blog on programming, travelling and various projects"
+
+aboutPage: true
+
+markdown: redcarpet
+highlighter: pygments
+
+paginate: 20
+baseurl: /
+domain_name: 'http://blog.alejandro.pictures'
+google_analytics: 'UA-XXXXXXXX-X'
+disqus: false
+disqus_shortname: 'David'
+
+# Details for the RSS feed generator
+url:            'http://blog.alejandro.pictures'
+author:         'David Przybilla'
+authorTwitter:  'dav009'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post

@@ -1,0 +1,35 @@
+---
+title:  "Tech scene in Vietnam 101"
+date:   2016-08-15 10:18:00
+description: Tech Scene in Vietnam 101
+---
+Not so long ago I decided to quit my job in London and go travelling for a few months, that’s probably a whole post on its own.
+
+As my first destination I decided to pick Vietnam, aside being a very friendly country for travellers (cheap prices, and friendly people).
+So I wanted to catch up with people working on tech here. 
+
+In the west we mostly use : [meetup.com](http://meetup.com) to check what events are taking place, however this is not how it works in vietnam.
+
+
+## Finding events
+Big events can be found on [TicketBox.vn](http://ticketbox.vn/)
+Smaller, regular community events however are to be found via Facebook.
+
+Yes, Viets love facebook, and most of the events/community connect via facebook.
+As an active meetup.com user I find facebook events feature a bit convoluted.
+
+
+- First you can’t search for events, and you can only see events near your current location.
+
+- Furthermore events that appear are based on your likes and groups, so if you have not been actively liking/joining groups, you will only see a bunch of random events that might not be interesting.
+
+
+As soon as you join a group (i.e: Python Viet Nam) the group will provide a link to a Skype chat group. I drop a few messages there and soon I was bombarded with tons of links to events.
+
+
+---
+
+Vietnam’s tech scene is booming, lots of American, and European investors are pouring money, there are many enterpreneurs, either locals or foreigners who make use of the growing and cheap infraestructure provided in cities like Ho Chi Minh/Hanoi/Danang.
+
+[jekyll-gh]: https://github.com/mojombo/jekyll
+[jekyll]:    http://jekyllrb.com
