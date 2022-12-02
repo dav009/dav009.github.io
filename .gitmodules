@@ -1,0 +1,9 @@
+[submodule "themes/elephants"]
+	path = themes/elephants
+	url = https://github.com/meibenny/elephants
+[submodule "themes/hugo-theme-minima"]
+	path = themes/hugo-theme-minima
+	url = https://github.com/Mivinci/hugo-theme-minima
+[submodule "themes/minima"]
+	path = themes/minima
+	url = https://github.com/mivinci/hugo-theme-minima.git
