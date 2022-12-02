@@ -1,7 +1,7 @@
 {
   inputs.nixpkgs.url = "nixpkgs/nixos-21.11";
-  inputs.theme-module.url = path:./themes/minima;
-  outputs = { self, nixpkgs, theme-module}:#, #theme-module}:
+ # inputs.theme-module.url = path:./themes/minima;
+  outputs = { self, nixpkgs}:#, theme-module}:#, #theme-module}:
     let
       supportedSystems = [ "x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin" ];
       forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
@@ -23,6 +23,18 @@
           };
           default = blog;
         });  
+
+      apps = forAllSystems (system: 
+        let pkgs = nixpkgsFor.${system};
+        in rec { 
+        app = {
+          type = "app";
+          program = "${pkgs.hugo}/bin/hugo";
+        };
+        default = app;
+        });
+
+     defaultApp = forAllSystems (system: self.apps.${system}.default); 
       
      devShells = forAllSystems (system:
         let pkgs = nixpkgsFor.${system};
