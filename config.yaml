@@ -1,4 +1,4 @@
-baseURL: localhost
+baseURL: localhost:8000
 languageCode: en-us
 title: David Przybilla Archive
 copyright: © 2022 X
