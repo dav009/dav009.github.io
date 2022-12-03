@@ -1,7 +1,8 @@
+# nix build '.?submodules=1'
+# nix run '.?submodules=1'
 {
   inputs.nixpkgs.url = "nixpkgs/nixos-21.11";
- # inputs.theme-module.url = path:./themes/minima;
-  outputs = { self, nixpkgs}:#, theme-module}:#, #theme-module}:
+  outputs = { self, nixpkgs }:
     let
       supportedSystems = [ "x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin" ];
       forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
@@ -12,7 +13,7 @@
         let pkgs = nixpkgsFor.${system};
         in rec {
           blog = pkgs.stdenv.mkDerivation {
-          name = "dav009_blog"; # our package name, irrelevant in this case
+          name = "dav009_blog";
           src = ./.;
             buildPhase = ''
               ${pkgs.hugo}/bin/hugo --minify
