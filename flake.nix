@@ -21,6 +21,9 @@
               cp -r public $out
             '';
           };
+          script = pkgs.writeShellScript "run" ''
+              ${pkgs.hugo}/bin/hugo serve
+          '';
           default = blog;
         });  
 
@@ -29,7 +32,7 @@
         in rec { 
         app = {
           type = "app";
-          program = "${pkgs.hugo}/bin/hugo";
+          program = "${self.packages.${system}.script}";
         };
         default = app;
         });
